@@ -6,7 +6,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		 TAB,    Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, LBRC, RBRC,  ENT,  FN3, \
 		CAPS,    A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN, QUOT, NUHS,        FN4, \
 		LSFT, NUBS,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH, RSFT,   UP,  DEL, \
-		LCTL, LGUI, LALT,                    SPC,             RALT,  FN0,  FN1, LEFT, DOWN, RGHT  \
+		LCTL, LGUI, LALT,                    SPC,             RALT,  FN1,  FN0, LEFT, DOWN, RGHT  \
 	),
 	/* 1: Function Layer 1 (MODIFIERS) */
 	KEYMAP( \
@@ -15,7 +15,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
 		TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,       TRNS, \
 		TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, PGUP,  INS, \
-		TRNS, TRNS, TRNS,                   TRNS,             TRNS,  FN0,  FN1, HOME, PGDN,  END  \
+		TRNS, TRNS, TRNS,                   TRNS,             TRNS,  FN1,  FN0, HOME, PGDN,  END  \
 	),
 	/* 2: Function Layer 2 (EXTRA) */
 	KEYMAP( \
@@ -24,7 +24,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		TRNS, TRNS, MS_U, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, MYCM, TRNS, TRNS, MPLY, TRNS, \
 		TRNS, MS_L, MS_D, MS_R, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,       TRNS, \
 		TRNS, TRNS, TRNS, TRNS, CALC, TRNS, TRNS, TRNS, MAIL, TRNS, TRNS, TRNS, TRNS, VOLU, MUTE, \
-		TRNS, TRNS, TRNS,                   TRNS,             TRNS,  FN0,  FN1, MPRV, VOLD, MNXT  \
+		TRNS, TRNS, TRNS,                   TRNS,             TRNS,  FN1,  FN0, MPRV, VOLD, MNXT  \
 	)
 };
 
