@@ -22,6 +22,7 @@ static void default_layer_state_set(uint32_t state)
     debug("default_layer_state: ");
     default_layer_debug(); debug(" to ");
     default_layer_state = state;
+    hook_default_layer_change(default_layer_state);
     default_layer_debug(); debug("\n");
     clear_keyboard_but_mods(); // To avoid stuck keys
 }
@@ -116,7 +117,7 @@ void layer_debug(void)
 
 action_t layer_switch_get_action(keypos_t key)
 {
-    action_t action = { .code = ACTION_TRANSPARENT };
+    action_t action = ACTION_TRANSPARENT;
 
 #ifndef NO_ACTION_LAYER
     uint32_t layers = layer_state | default_layer_state;
@@ -124,7 +125,7 @@ action_t layer_switch_get_action(keypos_t key)
     for (int8_t i = 31; i >= 0; i--) {
         if (layers & (1UL<<i)) {
             action = action_for_key(i, key);
-            if (action.code != ACTION_TRANSPARENT) {
+            if (action.code != (action_t)ACTION_TRANSPARENT.code) {
                 return action;
             }
         }
