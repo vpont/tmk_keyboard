@@ -32,7 +32,7 @@ enum macro_id {
 	HELLO,
 };
 
-static const uint16_t PROGMEM fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
 	[0] = ACTION_LAYER_MOMENTARY(1),
 	[1] = ACTION_LAYER_MOMENTARY(2),
 	[2] = ACTION_MACRO(HELLO)
